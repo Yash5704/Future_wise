@@ -1,0 +1,437 @@
+/* Base Styles */
+:root {
+    --primary-color: #4f46e5;
+    --primary-light: #e0e7ff;
+    --secondary-color: #10b981;
+    --secondary-light: #d1fae5;
+    --error-color: #dc2626;
+    --error-light: #fee2e2;
+    --success-color: #10b981;
+    --success-light: #d1fae5;
+    --text-color: #111827;
+    --text-light: #6b7280;
+    --border-color: #e5e7eb;
+    --white: #ffffff;
+    --card-radius: 8px;
+    --transition: all 0.2s ease;
+  }
+  
+  /* Container Styles */
+  .video-manager-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .manager-header {
+    margin-bottom: 2rem;
+  }
+  .dark .manager-header {
+    background-color: #1f2937;
+  }
+  
+  .manager-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .dark .manager-header h1 {
+    color: var(--white);
+  }
+  
+  .manager-header p {
+    color: var(--text-light);
+  }
+  
+  /* Message Styles */
+  .message {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: var(--card-radius);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .message.error {
+    background-color: var(--error-light);
+    color: var(--error-color);
+  }
+  
+  .message.success {
+    background-color: var(--success-light);
+    color: var(--success-color);
+  }
+  
+  .message-icon {
+    font-size: 1.2rem;
+  }
+  
+  /* Form Container */
+  .form-container {
+    background-color: var(--white);
+    border-radius: var(--card-radius);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  
+  .form-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .tab-button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text-light);
+    transition: var(--transition);
+  }
+  
+  .tab-button.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+  }
+  
+  .tab-button:hover {
+    background-color: #f9fafb;
+  }
+  
+  .tab-icon {
+    font-size: 1.1rem;
+  }
+  
+  /* Video Form */
+  .video-form {
+    padding: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--card-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--primary-light);
+  }
+  
+  /* File Upload */
+  .file-upload {
+    position: relative;
+  }
+  
+  .file-upload input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .file-upload label {
+    display: block;
+    padding: 0.75rem 1rem;
+    border: 1px dashed var(--border-color);
+    border-radius: var(--card-radius);
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .file-upload label:hover {
+    border-color: var(--primary-color);
+    background-color: var(--primary-light);
+  }
+  
+  /* Form Actions */
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .cancel-button,
+  .submit-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--card-radius);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .cancel-button {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+  }
+  
+  .cancel-button:hover:not(:disabled) {
+    background-color: #f9fafb;
+  }
+  
+  .submit-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+  }
+  
+  .submit-button:hover:not(:disabled) {
+    background-color: #4338ca;
+  }
+  
+  .cancel-button:disabled,
+  .submit-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .button-icon,
+  .loading-icon {
+    font-size: 1.1rem;
+  }
+  
+  .loading-icon {
+    animation: spin 1s linear infinite;
+  }
+
+  .video-preview {
+    margin: 15px 0;
+    max-width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .video-preview video {
+    width: 100%;
+    display: block;
+  }
+  
+  .file-upload label {
+    background: #f0f2f5;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    border: 2px dashed #ccc;
+    transition: all 0.3s ease;
+  }
+  
+  .file-upload label:hover {
+    background: #e4e6eb;
+    border-color: #999;
+  }
+  
+  select:disabled {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+  }
+  
+  .loading-state {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #666;
+  }
+  
+  .no-videos {
+    text-align: center;
+    color: #666;
+    padding: 40px 0;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Videos List */
+  .videos-list-container {
+    background-color: var(--white);
+    border-radius: var(--card-radius);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  .list-header {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+  }
+  
+  .loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: var(--text-light);
+  }
+  
+  .loading-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .no-videos {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-light);
+  }
+  
+  /* Videos Grid */
+  .videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .video-card {
+    border: 1px solid var(--border-color);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  
+  .video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-player {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-player iframe,
+  .video-player video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .video-info {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .video-info h3 {
+    font-size: 1rem;
+    margin: 0;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .video-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .edit-button,
+  .delete-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .edit-button {
+    background-color: var(--primary-light);
+    color: var(--primary-color);
+  }
+  
+  .edit-button:hover:not(:disabled) {
+    background-color: #c7d2fe;
+  }
+  
+  .delete-button {
+    background-color: var(--error-light);
+    color: var(--error-color);
+  }
+  
+  .delete-button:hover:not(:disabled) {
+    background-color: #fecaca;
+  }
+  
+  .edit-button:disabled,
+  .delete-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .video-manager-container {
+      padding: 1rem;
+    }
+  
+    .form-tabs {
+      flex-direction: column;
+    }
+  
+    .tab-button {
+      justify-content: flex-start;
+      padding: 1rem 1.5rem;
+      border-bottom: none;
+      border-left: 3px solid transparent;
+    }
+  
+    .tab-button.active {
+      border-bottom: none;
+      border-left: 3px solid var(--primary-color);
+    }
+  
+    .videos-grid {
+      grid-template-columns: 1fr;
+    }
+  }

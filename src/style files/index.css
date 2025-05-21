@@ -1,0 +1,506 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+.dark body {
+  background-color: #1f2937;
+  color: #f0f0f0;
+}
+
+/* Example component styles */
+.navbar {
+  background-color: #f9f9f9;
+}
+
+.dark .navbar {
+  background-color: #374151;
+}
+
+/* Header */
+header {
+  background-color: #e0e0e0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color:#0073e6;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+.no_underline {
+  text-decoration: none;
+}
+
+nav ul li {
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li:hover {
+  color: #0073e6;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background-color: #0073e6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #005bb5;
+}
+
+/* Footer */
+footer {
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li {
+  text-decoration: none;
+  color: #333;
+}
+
+footer ul li:hover {
+  color: #0073e6;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* Adjust header */
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-direction: column;
+      margin-top: 10px;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  /* Hero section text size */
+  .hero h1 {
+      font-size: 24px;
+  }
+
+  .hero p {
+      font-size: 16px;
+  }
+
+  /* Adjust video thumbnails */
+  .video-gallery {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .video-thumbnail {
+      width: 100%;
+      max-width: 350px;
+  }
+}
+
+
+/* category styling */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #e0e0e0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #0073e6;
+}
+
+/* Hero Section */
+.category-hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-hero h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.category-hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Categories Section */
+.categories-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.category {
+  background-color: #ffffff;
+  width: 250px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.category h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.category p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.category button {
+  background-color: #0073e6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.category button:hover {
+  background-color: #005bb5;
+}
+
+/* Footer */
+footer {
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer ul li a:hover {
+  color: #0073e6;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* Adjust header */
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-direction: column;
+      margin-top: 10px;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  /* Hero section text size */
+  .category-hero h1 {
+      font-size: 24px;
+  }
+
+  .category-hero p {
+      font-size: 16px;
+  }
+
+  /* Adjust category cards */
+  .categories-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .category {
+      width: 100%;
+      max-width: 350px;
+  }
+}
+
+
+.courses-info {
+  padding: 40px 20px;
+  background-color: #f4f4f4; /* Light background for contrast */
+  text-align: center;
+}
+
+.courses-info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #007BFF; /* Main theme color */
+}
+
+.courses-info p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 800px; /* Limiting max width for better readability */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .courses-info h2 {
+      font-size: 24px;
+  }
+
+  .courses-info p {
+      font-size: 16px;
+  }
+}
+
+
+
+
+
+/* General Styles */
+.courses-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #007BFF; /* Main theme color */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #007BFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Featured Courses Section */
+.featured-courses {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.featured-courses h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.course-card {
+  display: inline-block;
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.course-card h3 {
+  margin-bottom: 10px;
+}
+
+/* Benefits Section */
+.benefits {
+  background-color: #e9ecef;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.benefits h2 {
+  margin-bottom: 20px;
+}
+
+.benefits ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.benefits li {
+  margin: 10px 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 20px;
+}
+
+/* Upcoming Section */
+.upcoming {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Community Section */
+.community {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Resources Section */
+.resources {
+  background-color: #e9ecef;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Newsletter Section */
+.newsletter {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+      font-size: 28px;
+  }
+
+  .hero p {
+      font-size: 18px;
+  }
+
+  .cta-button {
+      font-size: 16px;
+  }
+
+  .featured-courses .course-card {
+      width: 90%; /* Stack course cards on smaller screens */
+  }
+
+  .featured-courses h2, .benefits h2, .testimonials h2, .upcoming h2, .community h2, .resources h2, .newsletter h2 {
+      font-size: 24px; /* Smaller headings on mobile */
+  }
+}

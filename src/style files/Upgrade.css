@@ -1,0 +1,133 @@
+.upgrade-container {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.upgrade-container h2 {
+  margin-bottom: 16px;
+  font-size: 26px;
+  color: #333;
+}
+
+.upgrade-container p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.qr-image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.upi-id-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+.upi-id-box span {
+  font-weight: 500;
+  color: #333;
+}
+
+.upi-id-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.upi-id-box button:hover {
+  background-color: #0056b3;
+}
+.upgrade-container input[type="text"],
+.upgrade-container input[type="file"] {
+  width: 100%;
+  margin: 10px 0 16px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.upgrade-container label {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.upgrade-container button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.upgrade-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.upgrade-container button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.upgrade-container p {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #444;
+}
+
+.plan-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.plan-card {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  width: 30%;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.plan-card.selected {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.plan-card:hover {
+  background-color: #f1f1f1;
+}

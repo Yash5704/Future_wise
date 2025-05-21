@@ -1,0 +1,114 @@
+/* PaymentHistory.css */
+.payment-history-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.payment-history-container h2 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.payment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.payment-table thead {
+  background-color: #3498db;
+  color: white;
+}
+
+.payment-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+.payment-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #ecf0f1;
+  color: #34495e;
+}
+
+.payment-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.payment-table thead tr:hover {
+  background-color: #2980b9;
+}
+
+
+.payment-table tr:hover {
+  background-color: #c6dcf1;
+}
+
+.payment-table a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.payment-table a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Status badges */
+.payment-table td:nth-child(3) {
+  text-transform: capitalize;
+}
+
+.payment-table td:nth-child(3)[data-status="approved"] {
+  color: #27ae60;
+  font-weight: 500;
+}
+
+.payment-table td:nth-child(3)[data-status="pending"] {
+  color: #f39c12;
+  font-weight: 500;
+}
+
+.payment-table td:nth-child(3)[data-status="rejected"] {
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+/* Empty state */
+.payment-history-container > p {
+  text-align: center;
+  color: #7f8c8d;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Loading state */
+.payment-history-container > p[data-loading="true"] {
+  color: #3498db;
+  font-size: 1.2rem;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+  .payment-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .payment-history-container {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,334 @@
+/* Course Detail Styles */
+.course-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #4f46e5;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.course-header {
+  margin-bottom: 2rem;
+}
+
+.dark .course-header {
+  background-color: #1f2937;
+}
+
+.course-header h1 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.course-description {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.course-meta {
+  display: flex;
+  gap: 1.5rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  gap: 1rem;
+}
+
+.spinner {
+  font-size: 2rem;
+  animation: spin 1s linear infinite;
+  color: #4f46e5;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.error-container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-icon {
+  font-size: 3rem;
+  color: #dc2626;
+  margin-bottom: 1rem;
+}
+
+.error-container h3 {
+  color: #dc2626;
+  margin-bottom: 0.5rem;
+}
+
+.retry-button, .back-button {
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.retry-button {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.retry-button:hover {
+  background-color: #4338ca;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: #64748b;
+  background-color: #f8fafc;
+  border-radius: 8px;
+}
+
+.video-content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+}
+
+.video-player-container {
+  margin-bottom: 2rem;
+}
+
+/* --- Newly Completed Classes Below --- */
+
+.video-player-wrapper {
+  width: 100%;
+  position: relative;
+  background: black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-player-wrapper video {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  display: block;
+  border-radius: 8px;
+  background: #000;
+}
+
+.video-error {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #dc2626;
+  background-color: #fee2e2;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: #000;
+  border-radius: 8px;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.current-video-info {
+  margin-top: 1rem;
+}
+
+.current-video-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+.current-video-info p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.video-duration {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.video-list-container {
+  background-color: #f8fafc;
+  padding: 1rem;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.video-list-container h3 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.video-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.video-item {
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.video-item:hover {
+  background-color: #e2e8f0;
+}
+
+.video-item.active {
+  background-color: #e0e7ff;
+}
+
+.video-thumbnail {
+  width: 60px;
+  height: 40px;
+  background-color: #e2e8f0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.youtube-icon {
+  color: #ff0000;
+  font-size: 1.5rem;
+}
+
+.video-icon {
+  color: #4f46e5;
+  font-size: 1rem;
+}
+
+.video-details {
+  flex-grow: 1;
+}
+
+.video-details h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  color: #1e293b;
+}
+
+.duration {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+/* Style for locked content section */
+.locked-content {
+  background-color: #f8f8f8;
+  border: 2px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.locked-content p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.pay-button {
+  background-color: #ff9800; /* Orange color */
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pay-button:hover {
+  background-color: #e68900; /* Darker orange when hovered */
+}
+
+.pay-button:active {
+  background-color: #c57700; /* Even darker orange when clicked */
+}
+
+/* --- Responsive adjustments for mobile --- */
+@media (max-width: 768px) {
+  .video-content {
+      grid-template-columns: 1fr;
+  }
+  
+  .video-list-container {
+      order: -1;
+      margin-bottom: 2rem;
+  }
+}
+.video-list-container h3 {
+  font-size: 1.25rem;
+}
+ .locked-content {
+    padding: 15px;
+  }
+
+  .pay-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }

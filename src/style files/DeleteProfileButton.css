@@ -1,0 +1,69 @@
+.delete-profile-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .danger-button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .danger-button:hover {
+    background-color: #d62828;
+  }
+  
+  .confirm-modal {
+    background-color: #fff3f3;
+    border: 1px solid #e63946;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .confirm-text {
+    color: #e63946;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .confirm-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .confirm-delete {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .cancel-button {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .confirm-delete:hover {
+    background-color: #c91c1c;
+  }
+  
+  .cancel-button:hover {
+    background-color: #b3b3b3;
+  }
+  

@@ -1,0 +1,154 @@
+/* Help Page Styles */
+.help-page {
+    background-color: #f8fafc;
+    min-height: calc(100vh - 120px);
+}
+
+.help-section {
+    padding: 3rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.help-container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+}
+
+.help-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.help-title {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.help-intro {
+    font-size: 1.25rem;
+    color: #475569;
+}
+
+.help-intro strong {
+    color: #4f46e5;
+}
+
+.help-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.help-card {
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #4f46e5;
+}
+
+.help-card p {
+    margin-bottom: 1rem;
+    color: #475569;
+}
+
+.help-card.faq {
+    background-color: #f0f9ff;
+    border-left-color: #38bdf8;
+}
+
+.help-card.contact-promo {
+    background-color: #f0fdf4;
+    border-left-color: #34d399;
+}
+
+.help-subtitle {
+    font-size: 1.5rem;
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.help-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.help-list li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed #cbd5e1;
+}
+
+.help-list li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.help-list li strong {
+    color: #1e40af;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.help-list li p {
+    color: #475569;
+    margin-left: 1rem;
+}
+
+.help-link {
+    color: #4f46e5;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.help-link:hover {
+    color: #3730a3;
+    text-decoration: underline;
+}
+
+.help-cta {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.help-button {
+    display: inline-block;
+    background-color: #4f46e5;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.help-button:hover {
+    background-color: #4338ca;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .help-section {
+        padding: 2rem 1rem;
+    }
+    
+    .help-container {
+        padding: 1.5rem;
+    }
+    
+    .help-title {
+        font-size: 1.75rem;
+    }
+    
+    .help-subtitle {
+        font-size: 1.25rem;
+    }
+}
