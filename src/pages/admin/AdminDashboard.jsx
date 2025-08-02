@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FiUsers, FiBook, FiVideo, FiSettings, FiPieChart } from "react-icons/fi";
 import { FaChalkboardTeacher, FaUserGraduate } from "react-icons/fa";
-import "./../../style-files/adminDashboard.css";
+import "../../../style-files/adminDashboard.css";
 
 
 function AdminDashboard() {
