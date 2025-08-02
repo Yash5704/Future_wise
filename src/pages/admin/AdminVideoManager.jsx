@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FiUpload, FiYoutube, FiEdit2, FiTrash2, FiLoader, FiX, FiCheck } from "react-icons/fi";
-import "../../style files/adminvideomanager.css";
+import "../../style-files/adminvideomanager.css";
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001/api';
 
 // Add this near your imports

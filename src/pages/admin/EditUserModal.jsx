@@ -1,6 +1,6 @@
 import React from "react";
 import { FiX, FiUser, FiMail, FiLock } from "react-icons/fi";
-import "../../style files/EditUserModal.css";
+import "../../style-files/EditUserModal.css";
 
 const EditUserModal = ({ user, onChange, onSave, onCancel, loading = false }) => {
   const handleChange = (e) => {

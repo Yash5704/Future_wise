@@ -2,7 +2,7 @@ import { useState,useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FaHome, FaList, FaPlay, FaUser, FaSignInAlt, FaChalkboardTeacher, FaUsers, FaBook, FaBars, FaTimes,FaStar } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
-import "../style files/navbar.css";
+import "../style-files/navbar.css";
 
 function Navbar() {
     const [isPremium, setIsPremium] = useState(false);

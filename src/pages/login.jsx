@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 
 import { FaEye, FaEyeSlash, FaLock, FaHome } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
-import "../style files/loginpage.css";
+import "../style-files/loginpage.css";
 
 const Login = () => {
     const [formData, setFormData] = useState({

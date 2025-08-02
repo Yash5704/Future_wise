@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import './../style files/DeleteProfileButton.css';
+import './../style-files/DeleteProfileButton.css';
 
 const DeleteProfileButton = ({ userId }) => {
   const [showConfirm, setShowConfirm] = useState(false);

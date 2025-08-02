@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { FiEdit2, FiTrash2, FiPlus, FiLoader } from 'react-icons/fi';
-import '../../style files/Courses.css';
+import '../../style-files/Courses.css';
 
 export default function Courses() {
   const [courses, setCourses] = useState([]);

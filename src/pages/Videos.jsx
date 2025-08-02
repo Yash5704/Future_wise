@@ -3,7 +3,7 @@ import axios from "axios";
 import { FiSearch, FiChevronLeft, FiChevronRight, FiLoader, FiAlertCircle } from "react-icons/fi";
 import { FaRegSadTear } from "react-icons/fa";
 const BASE_URL = import.meta.env.VITE_API_URL;
-import "../style files/videos.css";
+import "../style-files/videos.css";
 
 const Videos = () => {
   const [videos, setVideos] = useState([]);

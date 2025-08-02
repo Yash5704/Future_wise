@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import { FiUsers, FiBook, FiLoader, FiAlertCircle } from "react-icons/fi";
-import "../../style files/analytics.css";
+import "../../style-files/analytics.css";
 
 const Analytics = () => {
   const [stats, setStats] = useState({ 

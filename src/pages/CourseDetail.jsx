@@ -4,7 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { FaArrowLeft, FaYoutube, FaFileVideo, FaRegClock } from "react-icons/fa";
 import { MdErrorOutline } from "react-icons/md";
 import { ImSpinner8 } from "react-icons/im";
-import "../style files/courseDetail.css";
+import "../style-files/courseDetail.css";
 
 const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001';
 

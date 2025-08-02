@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "../style files/Upgrade.css";
+import "../style-files/Upgrade.css";
 
 const Upgrade = () => {
   const [transactionId, setTransactionId] = useState("");

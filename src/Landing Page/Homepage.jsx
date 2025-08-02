@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { FaGraduationCap, FaChalkboardTeacher, FaLaptopCode, FaComments, FaCalendarAlt, FaUsers, FaBookOpen } from "react-icons/fa";
-import "../style files/homepage.css"; // Adjust the path as necessary
+import "../style-files/homepage.css"; // Adjust the path as necessary
 
 function HomePage() {
   const navigate = useNavigate();

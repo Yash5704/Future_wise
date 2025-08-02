@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash, FaUser, FaEnvelope, FaLock, FaHome } from "react-icons/fa";
-import "../style files/signup.css";
+import "../style-files/signup.css";
 
 const Signup = () => {
   const [formData, setFormData] = useState({

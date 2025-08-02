@@ -4,8 +4,8 @@ import { FaEdit, FaSignOutAlt, FaUpload,FaHistory, FaSun, FaMoon, FaTwitter, FaL
 import {  FiSettings, } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 import DeleteProfileButton from "./DeleteProfileButton";
-import './../style files/profile.css';
-import './../style files/settings.css';
+import './../style-files/profile.css';
+import './../style-files/settings.css';
 
 const Profile = () => {
     const { id } = useParams();

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "../style files/help.css";
+import "../style-files/help.css";
 function Help() {
     return (
         <main className="help-page">

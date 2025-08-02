@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 import { FaEnvelope, FaLock, FaCheck, FaTimes } from 'react-icons/fa';
-import '../../style files/settings.css';
+import '../../style-files/settings.css';
 
 const Settings = () => {
   const [email, setEmail] = useState('');

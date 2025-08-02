@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { FiEdit2, FiTrash2, FiPlus, FiSearch, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import EditUserModal from "./EditUserModal";
-import "../../style files/adminUsers.css";
+import "../../style-files/adminUsers.css";
 
 const USERS_PER_PAGE = 10;
 
